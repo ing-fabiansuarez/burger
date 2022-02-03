@@ -1,0 +1,24 @@
+VERSION FRAMWORK ULIZADA CodeIgniter 4.0.4
+
+* rename env por .env
+        CI_ENVIRONMENT = development
+        app.baseURL = 'http://localhost/pera/'
+
+* Cambair app/Config/App
+        public $baseURL = 'http://localhost/pera/';
+        public $indexPage = '';
+	public $appTimezone = 'America/Bogota';;
+
+* Mover los archivos del directorio '/public/' a la raiz '/'
+
+* Cambair Linea en index.php:
+        "$pathsPath = realpath(FCPATH . '../app/Config/Paths.php');" 
+        por 
+        "$pathsPath = realpath(FCPATH . './app/Config/Paths.php');"
+
+* Cambiar .htacess - borrar todo y poner 
+        RewriteEngine on
+        RewriteCond $1 !^(index\.php|resources|robots\.txt)
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteRule ^(.*)$ index.php/$1 [L,QSA]
