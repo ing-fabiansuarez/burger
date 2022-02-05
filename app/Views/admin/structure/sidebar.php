@@ -1,7 +1,7 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="<?= base_url() ?>" class="brand-link">
-        <img src="<?= base_url() ?>/public/img/peraburgelogo1.png" alt="Logo" class="img-fluid" style="opacity: .8">
+        <img src="<?= base_url() ?>/public/img/logo.png" alt="Logo" class="img-fluid" style="opacity: .8">
     </a>
 
     <!-- Sidebar -->

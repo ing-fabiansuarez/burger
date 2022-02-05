@@ -13,20 +13,15 @@
 <body>
     <div class="login-wrap">
         <div class="login-html">
-            <img src="<?= base_url() ?>/public/img/peraburgelogo1.png" alt="Logo" class="img-fluid" style="width: 100%;">
-            
-            <h2></h2>
+           
+                    <img style="width: 60%;" src="<?= base_url() ?>/public/img/logo.png" alt="Logo" class="img-fluid" style="width: 100%;">
+              
 
-            <br>
-            <br>
             <?php if (session('msg')) : ?>
                 <div class="alert alert-danger">
                     <?= session('msg.body') ?>
                 </div>
             <?php endif ?>
-
-
-
             <br>
             <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Entrar</label>
             <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
